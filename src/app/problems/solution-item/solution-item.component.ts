@@ -11,13 +11,13 @@ export class SolutionItemComponent implements OnInit {
 
   @Input() solution: any;
   codeVisible = false;
-  toggleText = "See Example";
+  toggleText = "See Solution";
   ngOnInit() {
   }
 
   toggleCode() {
   	this.codeVisible = !this.codeVisible;
-  	this.toggleText = this.toggleText === "See Example" ? "Hide Example" : "See Example"
+  	this.toggleText = this.toggleText === "See Solution" ? "Hide Solution" : "See Solution"
   }
 
 }
